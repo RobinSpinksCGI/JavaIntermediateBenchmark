@@ -43,13 +43,13 @@ public class MathFunctions {
     }
 
     public class Addition {
-        public float add(int d1, int d2) {
+        public int add(int d1, int d2) {
             return d1 + d2;
         }
     }
 
     public class Subtraction {
-        public float subtract(int d1, int d2) {
+        public int subtract(int d1, int d2) {
             return d1 - d2;
         }
     }
@@ -57,17 +57,18 @@ public class MathFunctions {
     public static void main(String[] args) {
 //        Division division = new Division();
 //        Multiplication multiplication = new Multiplication();
-        Addition addition = new MathFunctions().new Addition();
-        Subtraction subtraction = new MathFunctions().new Subtraction();
+        MathFunctions mathFunctions = new MathFunctions();
+        Addition addition = mathFunctions.new Addition();
+        Subtraction subtraction = mathFunctions.new Subtraction();
 
         int four = 4;
         System.out.println("four: "+four);
-        float two = subtraction.subtract(four, 2);
+        int two = subtraction.subtract(four, 2);
 //        float two = division.divide(four, 2);
         System.out.println("two: "+two);
 
 //        float eight = multiplication.multiply(four, 2);
-        float eight = addition.add(four, four);
+        int eight = addition.add(four, four);
         System.out.println("eight: "+eight);
     }
 }
