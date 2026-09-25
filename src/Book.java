@@ -1,3 +1,14 @@
+/*
+This question is assessing your ability to persist objects using the Serializable interface in Java.
+
+Define a Book class that is serializable:
+
+Declare class attributes for the book title and author.
+Declare a serialVersionUID in your class to control serialization versions, and set its value to 1L.
+Create a constructor that takes in the title and author as parameters and initializes the corresponding attributes.
+Create a custom serialization method named readObject() to read the author and title information into a Book object.
+*/
+
 // Your imports below:
 import java.io.Serializable;
 import java.io.ObjectInputStream;
