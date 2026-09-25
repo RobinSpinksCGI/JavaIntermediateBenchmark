@@ -1,3 +1,7 @@
+/*
+This question is assessing your ability to apply the principles of generics to effectively utilize the collections framework in Java.
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
