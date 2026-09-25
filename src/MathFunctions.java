@@ -20,13 +20,13 @@ The methods within the nested classes must be divide and multiply.
 
 public class MathFunctions {
     public static class Division {
-        public double divide(int d1, int d2) {
-            return (double) d1 / d2;
+        public float divide(int d1, int d2) {
+            return (float) d1 / d2;
         }
     }
 
     public static class Multiplication {
-        public double multiply(int d1, int d2) {
+        public float multiply(int d1, int d2) {
             return d1 * d2;
         }
     }
@@ -36,9 +36,9 @@ public class MathFunctions {
         Multiplication multiplication = new Multiplication();
         int four = 4;
         System.out.println("four: "+four);
-        double two = division.divide(four, 2);
+        float two = division.divide(four, 2);
         System.out.println("two: "+two);
-        double eight = multiplication.multiply(four, 2);
+        float eight = multiplication.multiply(four, 2);
         System.out.println("eight: "+eight);
     }
 }
