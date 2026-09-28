@@ -58,8 +58,8 @@ public class MathFunctions {
 //        Division division = new Division();
 //        Multiplication multiplication = new Multiplication();
         MathFunctions mathFunctions = new MathFunctions();
-        Addition addition = mathFunctions.new Addition();
-        Subtraction subtraction = mathFunctions.new Subtraction();
+        MathFunctions.Addition addition = mathFunctions.new Addition();
+        MathFunctions.Subtraction subtraction = mathFunctions.new Subtraction();
 
         int four = 4;
         System.out.println("four: "+four);
