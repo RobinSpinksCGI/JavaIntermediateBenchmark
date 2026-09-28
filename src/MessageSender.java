@@ -29,12 +29,15 @@ class MessageSender implements Runnable {
 
     public void run() {
         // Your code below:
-    }
-}
+        System.out.println("Message to be sent to "+this.recipient+":\n"+this.message);
 
-public class MessagingSystem {
-    public static void main(String[] args) {
-        // Your code below:
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Message sent to "+this.recipient+":\n"+this.message);
     }
 }
 
