@@ -23,14 +23,17 @@ The main method and some test email addresses have been provided. You may use it
 
 // Your imports here:
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class EmailValidator {
     // Your code below:
-
+    private static String emailRegex = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$";
+    private static Pattern pattern = Pattern.compile(emailRegex, Pattern.CASE_INSENSITIVE);
 
     public static boolean isValidEmail(String email) {
         // Implement this method:
-
-        return false;
+        return pattern.matcher(email).matches();
     }
 
     public static void main(String[] args) {
