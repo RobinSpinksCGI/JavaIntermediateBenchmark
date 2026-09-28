@@ -61,14 +61,12 @@ public class MathFunctions {
         MathFunctions.Addition addition = mathFunctions.new Addition();
         MathFunctions.Subtraction subtraction = mathFunctions.new Subtraction();
 
-        int four = 4;
-        System.out.println("four: "+four);
-        int two = subtraction.subtract(four, 2);
-//        float two = division.divide(four, 2);
+        int two = subtraction.subtract(4, 2);
+//        float two = division.divide(4, 2);
         System.out.println("two: "+two);
 
-//        float eight = multiplication.multiply(four, 2);
-        int eight = addition.add(four, four);
+//        float eight = multiplication.multiply(4, 2);
+        int eight = addition.add(4, 4);
         System.out.println("eight: "+eight);
     }
 }
