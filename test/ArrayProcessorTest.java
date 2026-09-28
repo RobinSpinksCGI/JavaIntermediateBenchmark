@@ -26,7 +26,10 @@ public class ArrayProcessorTest {
     private ArrayProcessor arrayProcessor;
 
     // Write your code below
-
+    @Before
+    public void setUp() {
+        this.arrayProcessor = new ArrayProcessor();
+    }
 
     @Test
     public void testFindMaxWithPositiveNumbers() {
@@ -47,6 +50,12 @@ public class ArrayProcessorTest {
         int[] array = {};
         arrayProcessor.findMax(array);
     }
+
+    @After
+    public void tearDown() {
+        this.arrayProcessor = null;
+    }
+
     public ArrayProcessor getArrayProcessor() {
         return arrayProcessor;
     }
